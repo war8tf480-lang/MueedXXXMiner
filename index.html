@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mueed XXX Miner | Mining Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">MUEED <span>XXX</span> MINER</div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#rates">Rates</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="tag">⛏ Only for Fucking contact </p>
+    <h1>MUEED <span>XXX</span> MINER</h1>
+    <p class="description">
+      Fast, professional mining services with flexible hourly packages.
+    </p>
+
+    <div class="buttons">
+      <a href="#rates" class="btn primary">View Rates</a>
+      <a href="#contact" class="btn secondary">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <p class="small-title">WHAT WE OFFER</p>
+  <h2>Our Services</h2>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="icon">⛏️</div>
+      <h3>Mining</h3>
+      <p>Professional mining and resource collection services.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">💎</div>
+      <h3>Resource Collection</h3>
+      <p>Efficient collection and organization of valuable resources.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">⚡</div>
+      <h3>Fast Service</h3>
+      <p>Quick and reliable service according to your selected package.</p>
+    </div>
+  </div>
+</section>
+
+<section id="rates" class="section rates-section">
+  <p class="small-title">PRICING</p>
+  <h2>Hourly Rates</h2>
+
+  <div class="pricing-grid">
+
+    <div class="price-card">
+      <h3>1 Hour</h3>
+      <div class="price">Rs. 1,000</div>
+      <p>Basic mining service</p>
+      <button onclick="selectPlan('1 Hour - Rs. 1,000')">Choose Plan</button>
+    </div>
+
+    <div class="price-card popular">
+      <div class="popular-label">POPULAR</div>
+      <h3>2 Hours</h3>
+      <div class="price">Rs. 2,000</div>
+      <p>Extended mining service</p>
+      <button onclick="selectPlan('2 Hours - Rs. 1,800')">Choose Plan</button>
+    </div>
+
+    <div class="price-card">
+      <h3>4 Hours</h3>
+      <div class="price">Rs. 3,000</div>
+      <p>Half-day service</p>
+      <button onclick="selectPlan('4 Hours - Rs. 3,200')">Choose Plan</button>
+    </div>
+
+    <div class="price-card">
+      <h3>8 Hours</h3>
+      <div class="price">Rs. 5,500</div>
+      <p>Full working session</p>
+      <button onclick="selectPlan('8 Hours - Rs. 5,500')">Choose Plan</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Full Day</h3>
+      <div class="price">Rs. 8,000</div>
+      <p>Complete day package</p>
+      <button onclick="selectPlan('Full Day - Rs. 8,000')">Choose Plan</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <p class="small-title">GET STARTED</p>
+  <h2>Book Your Service</h2>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <input type="text" id="contactInfo"
+           placeholder="Phone / WhatsApp" required>
+
+    <select id="plan" required>
+      <option value="">Select Package</option>
+      <option>1 Hour - Rs. 1,000</option>
+      <option>2 Hours - Rs. 1,800</option>
+      <option>4 Hours - Rs. 3,200</option>
+      <option>8 Hours - Rs. 5,500</option>
+      <option>Full Day - Rs. 8,000</option>
+    </select>
+
+    <textarea id="message"
+              placeholder="Additional details"></textarea>
+
+    <button type="submit" class="submit-btn">
+      Send Booking Request
+    </button>
+  </form>
+
+  <p id="result"></p>
+</section>
+
+<footer>
+  <div class="logo">MUEED <span>XXX</span> MINER</div>
+  <p>© 2026 Mueed XXX Miner. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<div class="contact-number">
+  📞 Contact: <a href="tel:+92">+92 300 1234567</a>
+</div>
+<form onsubmit="submitForm(event)" id="bookingForm">
+
+  <input
+    type="text"
+    id="name"
+    placeholder="Your Name"
+    required
+  >
+
+  <input
+    type="text"
+    id="contactInfo"
+    placeholder="Phone / WhatsApp"
+    required
+  >
+
+  <select id="plan" required>
+    <option value="">Select Package</option>
+    <option>1 Hour - Rs. 1,000</option>
+    <option>2 Hours - Rs. 1,800</option>
+    <option>4 Hours - Rs. 3,200</option>
+    <option>8 Hours - Rs. 5,500</option>
+    <option>Full Day - Rs. 8,000</option>
+  </select>
+
+  <textarea
+    id="message"
+    placeholder="Additional details"
+  ></textarea>
+
+  <button type="submit" class="submit-btn">
+    📩 Send Booking Order
+  </button>
+
+</form>
+
+<div id="notification" class="notification"></div>
+<footer>
+  <div class="logo">MUEED <span>XXX</span> MINER</div>
+
+  <p>© 2026 Mueed XXX Miner. All rights reserved.</p>
+
+  <p class="developer">
+    Developed with ❤️ by <strong>Hussain</strong>
+  </p>
+</footer>
+<div class="price-card">
+  <div class="icon">🥥</div>
+  <h3>Coconut Oil</h3>
+  <div class="price">Rs. 50</div>
+  <p>Pure coconut oil</p>
+  <button onclick="selectOil('Coconut Oil - Rs. 50')">Order Now</button>
+</div>
+
+<div class="price-card">
+  <div class="icon">🫒</div>
+  <h3>Oliva Oil</h3>
+  <div class="price">Rs. 100</div>
+  <p>Premium oil</p>
+  <button onclick="selectOil('Oliva Oil - Rs. 100')">Order Now</button>
+</div>
+
+<div class="price-card">
+  <div class="icon">🛢️</div>
+  <h3>Sandai Oil</h3>
+  <div class="price">Rs. 100</div>
+  <p>Special oil</p>
+  <button onclick="selectOil('Sandai Oil - Rs. 100')">Order Now</button>
+</div>
+<section id="condoms" class="section condom-section">
+  <p class="small-title">ADULT PRODUCTS</p>
+  <h2>Condom Collection</h2>
+
+  <div class="pricing-grid">
+
+    <div class="price-card">
+      <div class="icon">🛡️</div>
+      <h3>Classic</h3>
+      <div class="price">Rs. 100</div>
+      <p>Classic protection pack</p>
+      <button onclick="selectProduct('Classic Condom - Rs. 100')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">🛡️</div>
+      <h3>Ultra Thin</h3>
+      <div class="price">Rs. 150</div>
+      <p>Ultra-thin design</p>
+      <button onclick="selectProduct('Ultra Thin Condom - Rs. 150')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">🛡️</div>
+      <h3>Extra Safe</h3>
+      <div class="price">Rs. 150</div>
+      <p>Extra protection</p>
+      <button onclick="selectProduct('Extra Safe Condom - Rs. 150')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">🍓</div>
+      <h3>Strawberry</h3>
+      <div class="price">Rs. 180</div>
+      <p>Flavored condom</p>
+      <button onclick="selectProduct('Strawberry Condom - Rs. 180')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">🍌</div>
+      <h3>Banana</h3>
+      <div class="price">Rs. 180</div>
+      <p>Flavored condom</p>
+      <button onclick="selectProduct('Banana Condom - Rs. 180')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">🌿</div>
+      <h3>Mint</h3>
+      <div class="price">Rs. 180</div>
+      <p>Refreshing flavor</p>
+      <button onclick="selectProduct('Mint Condom - Rs. 180')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">✨</div>
+      <h3>Dotted</h3>
+      <div class="price">Rs. 200</div>
+      <p>Textured design</p>
+      <button onclick="selectProduct('Dotted Condom - Rs. 200')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">✨</div>
+      <h3>Ribbed</h3>
+      <div class="price">Rs. 200</div>
+      <p>Ribbed texture</p>
+      <button onclick="selectProduct('Ribbed Condom - Rs. 200')">
+        Order Now
+      </button>
+    </div>
+
+    <div class="price-card">
+      <div class="icon">💎</div>
+      <h3>Premium</h3>
+      <div class="price">Rs. 200</div>
+      <p>Premium quality</p>
+      <button onclick="selectProduct('Premium Condom - Rs. 250')">
+        Order Now
+      </button>
+    </div>
+
+  </div>
+</section>
+<a href="#condoms">Condoms</a>
